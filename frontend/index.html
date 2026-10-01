@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leipzig Path — Germany roadmap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="flag">🇩🇪</span><div><b>Leipzig Path</b><small>СФУ → Германия</small></div></div>
+  <nav id="nav">
+    <button data-view="home" class="nav-btn active">Главная</button>
+    <button data-view="study" class="nav-btn">Поступление</button>
+    <button data-view="move" class="nav-btn">Переезд без вуза</button>
+    <button data-view="languages" class="nav-btn">Языки</button>
+    <button data-view="documents" class="nav-btn">Документы</button>
+    <button data-view="account" class="nav-btn">Аккаунт</button>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="view active">
+  <div class="hero">
+    <div>
+      <span class="eyebrow">ТВОЙ МАРШРУТ</span>
+      <h1>Из СФУ в Германию.<br><span>По шагам, без хаоса.</span></h1>
+      <p>Личный трекер поступления, языков, документов и альтернативных путей переезда. Цель — Leipzig, но план B тоже готов.</p>
+      <div class="hero-actions">
+        <button class="primary" data-view="study">Начать маршрут →</button>
+        <button class="ghost" data-view="move">Посмотреть план B</button>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="mini-title">Текущая точка</div>
+      <div class="big">1 курс СФУ</div>
+      <div class="muted">Software Engineering · Красноярск</div>
+      <div class="levels"><span>🇬🇧 A1</span><span>🇩🇪 A0</span></div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div><b id="overall">0%</b><span>общий прогресс</span></div>
+    <div><b id="de">A0</b><span>немецкий</span></div>
+    <div><b id="en">A1</b><span>английский</span></div>
+    <div><b id="tasks">0/0</b><span>задач выполнено</span></div>
+  </div>
+
+  <div class="grid-3">
+    <article class="card accent"><span>01</span><h3>🇩🇪 Немецкий</h3><p>От A0 до C1: чтение → A1 → A2 → B1 → B2 → C1 и подготовка к языковому экзамену.</p><button class="text-btn" data-view="languages">Открыть план →</button></article>
+    <article class="card"><span>02</span><h3>🎓 Поступление</h3><p>Выбор программы, Hochschulzugang, документы, uni-assist/портал вуза, дедлайны и зачисление.</p><button class="text-btn" data-view="study">Открыть маршрут →</button></article>
+    <article class="card"><span>03</span><h3>🧭 План B</h3><p>Ausbildung, поиск работы после получения квалификации и Chancenkarte — отдельные легальные маршруты.</p><button class="text-btn" data-view="move">Разобраться →</button></article>
+  </div>
+</section>
+
+<section id="study" class="view">
+  <div class="section-head"><div><span class="eyebrow">ПУТЬ A · УНИВЕРСИТЕТ</span><h2>Поступление в Лейпциг</h2></div><span class="pill">Главная цель</span></div>
+  <div class="notice">Для немецкоязычных программ Informatik язык — ключевой этап. Проверяй конкретную программу каждый год: требования, дедлайны и способ подачи могут меняться.</div>
+  <div class="timeline" id="studyTasks"></div>
+  <div class="source-grid">
+    <a href="https://www.uni-leipzig.de/en/study/after-your-studies/applying" target="_blank" class="source">University of Leipzig ↗</a>
+    <a href="https://www.uni-assist.de/en/" target="_blank" class="source">uni-assist ↗</a>
+    <a href="https://www.make-it-in-germany.com/en/visa-residence/types/studying" target="_blank" class="source">Study visa ↗</a>
+  </div>
+</section>
+
+<section id="move" class="view">
+  <div class="section-head"><div><span class="eyebrow">ПУТЬ B · ЕСЛИ НЕ ВУЗ</span><h2>Как переехать в Германию иначе</h2></div></div>
+  <div class="notice">Это не «обходной путь», а отдельные основания для проживания. Для каждого нужны свои условия. Не рассчитывай на одну схему заранее — проверяй актуальные требования перед подачей.</div>
+  <div class="routes">
+    <article class="route"><div class="route-icon">🛠️</div><h3>Ausbildung</h3><p>Профессиональное обучение в Германии. Для многих программ обычно нужен немецкий B1 и конкретное место Ausbildung. В 2026 году для визы на поиск места действуют отдельные условия.</p><ul><li>Немецкий: обычно B1</li><li>Найти Ausbildungsplatz</li><li>Виза/ВНЖ §16a</li><li>После Ausbildung — работа и дальнейшие варианты</li></ul><a href="https://www.make-it-in-germany.com/en/visa-residence/types/training" target="_blank">Официальная информация →</a></article>
+    <article class="route"><div class="route-icon">💼</div><h3>Работа после квалификации</h3><p>Если сначала получить высшее образование/квалификацию и затем найти квалифицированную работу в Германии, существуют рабочие ВНЖ. Для некоторых маршрутов требуется признание или сопоставимость квалификации.</p><ul><li>Диплом/квалификация</li><li>Квалифицированная вакансия</li><li>Проверка признания квалификации</li><li>Рабочий ВНЖ / EU Blue Card при выполнении условий</li></ul><a href="https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals" target="_blank">Официальная информация →</a></article>
+    <article class="route"><div class="route-icon">🧭</div><h3>Chancenkarte</h3><p>Маршрут для поиска квалифицированной работы в Германии при выполнении условий. Один из вариантов основан на признанной квалификации, другой — на балльной системе.</p><ul><li>Финансовое обеспечение</li><li>Квалификация или ≥6 баллов</li><li>Отдельные языковые требования в зависимости от основания</li><li>Работа во время поиска в пределах правил</li></ul><a href="https://www.make-it-in-germany.com/en/visa-residence/opportunity-card/job-search" target="_blank">Официальная информация →</a></article>
+  </div>
+  <div class="checklist"><h3>Что делать тебе сейчас</h3><label><input type="checkbox" data-task="move.german"> Учить немецкий до B1</label><label><input type="checkbox" data-task="move.cv"> Собрать немецкое CV</label><label><input type="checkbox" data-task="move.github"> Сделать GitHub с проектами</label><label><input type="checkbox" data-task="move.jobs"> Изучить Ausbildung/IT-вакансии</label><label><input type="checkbox" data-task="move.finance"> Составить финансовый план переезда</label></div>
+</section>
+
+<section id="languages" class="view">
+  <div class="section-head"><div><span class="eyebrow">ПОДГОТОВКА</span><h2>Языки</h2></div></div>
+  <div class="language-grid">
+    <article class="lang-card german"><div class="lang-top"><span>🇩🇪</span><div><h3>Deutsch</h3><small>Цель: C1</small></div></div><div class="bar"><i id="debar"></i></div><div class="lang-levels" id="deLevels"></div></article>
+    <article class="lang-card english"><div class="lang-top"><span>🇬🇧</span><div><h3>English</h3><small>Цель: B2/C1</small></div></div><div class="bar"><i id="enbar"></i></div><div class="lang-levels" id="enLevels"></div></article>
+  </div>
+  <div class="checklist"><h3>Еженедельная система</h3><label><input type="checkbox" data-task="lang.daily"> 30–60 минут языка каждый день</label><label><input type="checkbox" data-task="lang.input"> Слушать/читать материал на изучаемом языке</label><label><input type="checkbox" data-task="lang.words"> Повторять лексику интервально</label><label><input type="checkbox" data-task="lang.output"> Практиковать письмо и говорение</label><label><input type="checkbox" data-task="lang.exam"> Раз в месяц делать мини-тест уровня</label></div>
+</section>
+
+<section id="documents" class="view">
+  <div class="section-head"><div><span class="eyebrow">ПАПКА</span><h2>Документы</h2></div></div>
+  <div class="doc-grid">
+    <article class="card"><h3>🎓 Образование</h3><p>Аттестат, приложение, документы СФУ, справки, при необходимости переводы и заверения.</p><input type="checkbox" data-task="doc.school"> Аттестат подготовлен<br><input type="checkbox" data-task="doc.transcripts"> Выписка/транскрипт подготовлен</article>
+    <article class="card"><h3>🪪 Личные</h3><p>Загранпаспорт, фото, анкеты, адресные и контактные данные.</p><input type="checkbox" data-task="doc.passport"> Загранпаспорт проверен<br><input type="checkbox" data-task="doc.photos"> Фото подготовлены</article>
+    <article class="card"><h3>💶 Финансы</h3><p>Подтверждение средств зависит от основания пребывания. Не используй старые цифры — сверяй официальный источник перед подачей.</p><input type="checkbox" data-task="doc.finance"> Финансовый план есть<br><input type="checkbox" data-task="doc.source"> Официальные требования проверены</article>
+  </div>
+</section>
+
+<section id="account" class="view">
+  <div class="section-head"><div><span class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</span><h2 id="accountTitle">Аккаунт</h2></div></div>
+  <div id="authBox" class="auth-card">
+    <div class="tabs"><button id="loginTab" class="active">Войти</button><button id="registerTab">Регистрация</button></div>
+    <form id="authForm"><input id="email" type="email" placeholder="Email" required><input id="password" type="password" placeholder="Пароль, минимум 8 символов" required minlength="8"><button class="primary" type="submit">Продолжить</button><p id="authMsg" class="muted"></p></form>
+  </div>
+  <div id="profileBox" class="auth-card hidden">
+    <p>Вход выполнен: <b id="userEmail"></b></p>
+    <div class="form-grid"><label>Немецкий<select id="profileDe"><option>A0</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option></select></label><label>Английский<select id="profileEn"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option></select></label><label>Целевая программа<input id="profileProgram" value="Informatik"></label><label>Город<input id="profileCity" value="Leipzig"></label></div>
+    <button class="primary" id="saveProfile">Сохранить профиль</button> <button class="ghost" id="logout">Выйти</button>
+    <p class="muted">Синхронизация прогресса работает через backend. Без backend сайт продолжает работать локально.</p>
+  </div>
+</section>
+</main>
+
+<footer><span>Leipzig Path · personal roadmap</span><span>Проверяй официальные источники перед реальной подачей.</span></footer>
+<script src="app.js"></script>
+</body>
+</html>
