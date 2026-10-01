@@ -1,4 +1,4 @@
-const API = localStorage.getItem("leipzig_api") || "http://127.0.0.1:8000/api";
+const API = "https://leipzig-path.onrender.com/api";
 let token = localStorage.getItem("leipzig_token");
 let authMode = "login";
 let localProgress = JSON.parse(localStorage.getItem("leipzig_progress") || "{}");
