@@ -7,7 +7,7 @@ from fastapi import FastAPI, HTTPException, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
-from passlib.context import CryptContext
+from pwdlib import PasswordHash
 from pydantic import BaseModel, EmailStr, Field
 
 BASE = Path(__file__).resolve().parent
@@ -16,7 +16,7 @@ SECRET_KEY = os.getenv("LEIPZIG_SECRET", "CHANGE_ME_IN_PRODUCTION")
 ALGORITHM = "HS256"
 TOKEN_MINUTES = 60 * 24 * 7
 
-pwd = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd = PasswordHash.recommended()
 oauth2 = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
 
 app = FastAPI(title="Leipzig Path API", version="2.0.0")
